@@ -2,10 +2,7 @@
 
 A full stack employee registration web application built with HTML, CSS, JavaScript, Node.js, Express, and MySQL.
 
-## 📸 Screenshots
 
-### Employee Registration Form
-![Employee Registration Form](screenshots/form.png)
 
 ## 🚀 Features
 - Register new employees with a form
