@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACK_GOLD — Employee Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Employee Registration</h1>
+    <p class="subtitle">BLACK_GOLD</p>
+
+    <form id="registrationForm">
+
+      <div class="row">
+        <div class="field">
+          <label>First Name *</label>
+          <input type="text" id="firstName" placeholder="e.g. Rahul">
+          <span class="err" id="firstName-err">First name is required</span>
+        </div>
+        <div class="field">
+          <label>Last Name *</label>
+          <input type="text" id="lastName" placeholder="e.g. Sharma">
+          <span class="err" id="lastName-err">Last name is required</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" id="email" placeholder="rahul@blackgold.com">
+          <span class="err" id="email-err">Enter a valid email</span>
+        </div>
+        <div class="field">
+          <label>Phone Number *</label>
+          <input type="tel" id="phone" placeholder="10-digit number">
+          <span class="err" id="phone-err">Enter a valid 10-digit number</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Department *</label>
+          <select id="department">
+            <option value="">— select —</option>
+            <option>Engineering</option>
+            <option>Human Resources</option>
+            <option>Sales</option>
+            <option>Marketing</option>
+            <option>Finance</option>
+            <option>Operations</option>
+          </select>
+          <span class="err" id="department-err">Please select a department</span>
+        </div>
+        <div class="field">
+          <label>Job Title *</label>
+          <input type="text" id="jobTitle" placeholder="e.g. Software Engineer">
+          <span class="err" id="jobTitle-err">Job title is required</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Date of Joining *</label>
+        <input type="date" id="joinDate">
+        <span class="err" id="joinDate-err">Please select a join date</span>
+      </div>
+
+      <button type="button" onclick="submitForm()">Register Employee</button>
+
+      <div class="success" id="successMsg"></div>
+      <div class="error-banner" id="errorMsg"></div>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
